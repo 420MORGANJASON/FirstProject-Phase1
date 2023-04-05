@@ -8,6 +8,9 @@ html {
 * {
     box-sizing: border-box;
 }
+.container{
+    width: 100%;
+}
 
 .bg-image {
     /* The image used */
@@ -144,8 +147,8 @@ h1{
 /* styling the h3  */
 h3{
     font-size: 50px;
-    height: 1800px;
-        width: 1200px;
+    height: 1300px;
+        width: 2300px;
         color: #fff;
         padding: 12px 0;
         background: transparent;
@@ -167,9 +170,9 @@ h3{
 
 .image {
     opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
+    display: flex;
+    width: 200%;
+    height: 200%;
     transition: .5s ease;
     backface-visibility: hidden;
 }
@@ -178,7 +181,7 @@ h3{
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -194,10 +197,10 @@ h3{
 }
 
 .text {
-    background-color: #04AA6D;
+    background-color: transparent;
     color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+    font-size: 80px;
+    padding: 20px 42px;
 }
 
 *{
@@ -210,6 +213,7 @@ h3{
     background-color: black;
     margin: auto;
     display: flex;
+
   
 }
 row{
@@ -308,9 +312,15 @@ ul{
         width: 100%;
     }
 }
-h2 {
-    font-size: 100px;
+h5{
+    font-size: 130px;
     color: red;
+    width: 40%;
+    padding: 10px;
+    margin: 0%;
+    border: 15%;
+    border-radius: 10px;
+    background-color: grey;
 }
 
 form {
@@ -357,7 +367,7 @@ input[type=password] {
     width: 100%;
     height: 60%;
 }
-
+/* 
 .card1 {
     background-image: url(983827fb-e9cc-4983-8c2a-1e3a77db6775.jpeg);
     position: relative;
@@ -404,32 +414,32 @@ input[type=password] {
 
 .card2 {
     background-image: url(d6715c9b-84ee-4877-9765-a957890acfad.jpeg);
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     opacity: 0.7;
     display: flex;
 }
 
 .card3 {
     background-image: url(b6270416-d535-4519-9924-a3d2d6f78d02.jpeg);
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     opacity: 0.7;
     display: flex;
 }
 
 .card4 {
     background-image: url(99ec3719-3be6-46f0-be9b-06eb57c53700.jpeg);
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     opacity: 0.7;
     display: flex;
 }
 
 .card5 {
     background-image: url(c145bbd9-bded-401f-849b-437961c1ad41.jpeg);
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     opacity: 0.7;
     display: flex;
 
@@ -437,4 +447,4 @@ input[type=password] {
 
 .card:hover {
     transform: translateY(-20px);
-}
+} */
