@@ -286,12 +286,7 @@ h3{
     font-size: 80px;
     padding: 20px 42px;
 }
-/* 
-*{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-} */
+
 .container1{
     max-width: 1000px;
     background-color: grey;
