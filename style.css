@@ -15,7 +15,7 @@ body{
         cursor: pointer;
         opacity: 0.8;
         position: fixed;
-        bottom: 23px;
+        bottom: 20px;
         right: 28px;
         width: 280px;
     }
@@ -222,7 +222,7 @@ h1{
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-    display: inline;
+    display: block;
 }
 /* styling the h3  */
 h3{
