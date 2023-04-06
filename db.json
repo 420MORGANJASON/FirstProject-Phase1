@@ -1,0 +1,115 @@
+{
+  "vehicles": [
+    {
+      "id": "1",
+      "title": "AMBUSH",
+      "number": "KDG 195K",
+      "capacity": 33,
+      "poster": "Photo_1680429658843.jpg"
+    },
+    {
+      "id": "2",
+      "title": "AMBUSH REAR",
+      "number": "KDG 195K",
+      "capacity": 33,
+      "poster": "Photo_1680429661542.jpg"
+    },
+    {
+      "id": "3",
+      "title": "AMBUSH INTERIOR",
+      "number": "KDG 195K",
+      "capacity": 33,
+      "poster": "Photo_1680429660216 (1).jpg"
+    },
+    {
+      "id": "4",
+      "title": "WEST UP",
+      "numbeer": "KAD 643W",
+      "capacity": 14,
+      "poster": "b2167c93-7216-439f-b2e9-9a2856354945.jpeg"
+    },
+    {
+      "id": "5",
+      "title": "WEST UP",
+      "number": "KAD 643W",
+      "capacity": 14,
+      "poster": "e4932b7f-92b0-4fee-8211-59a9f17afded.jpeg"
+    },
+    {
+      "id": "6",
+      "title": "BIONIC",
+      "number": "KDK 063K",
+      "poster": "d23248cc-2bc0-4fc0-857b-d53f12f4496b.jpeg"
+    },
+    {
+      "id": "7",
+      "title": "FUNKA DELICA",
+      "number": "KDK 983A",
+      "capacity": 33,
+      "poster": "ede6cb5a-9d04-45b1-a215-a198c51b7c5d.jpeg"
+    },
+    {
+      "id": "8",
+      "title": "FUNKA DELICA",
+      "capacity": 33,
+      "number": "KDK 983A",
+      "poster": "Photo_1679385490594.jpg"
+    },
+    {
+      "id": "9",
+      "title": "DOYEN",
+      "number": "KDL 216K",
+      "capacity": 33,
+      "poster": "Picsart_23-04-05_14-27-24-439.jpg"
+    },
+    {
+      "id": "10",
+      "title": "BVB",
+      "number": "KDK 216K",
+      "capacity": 33,
+      "poster": "Photo_1680429649302 (1).jpg"
+    },
+    {
+      "id": "11",
+      "title": "BVB",
+      "number": "KDK 216K",
+      "capacity": 33,
+      "poster": "Photo_1680429650583.jpg"
+    },
+    {
+      "id": "12",
+      "title": "13",
+      "number": "KCG 247K",
+      "capacity": 13,
+      "poster": "46a5941a-93a5-49e5-93ab-44ce7c2b2e6f.jpeg"
+    },
+    {
+      "id": "12",
+      "title": "13 ",
+      "number": "KCG 274K",
+      "capacity": 13,
+      "poster": "41ec3466-5a9f-4837-ae1a-a08965a52a00.jpeg"
+    },
+    {
+      "id": "14",
+      "title": "ILL",
+      "number": "KBE 461B",
+      "capacity": 144,
+      "poster": "06c7f04d-f7c4-4838-a6d4-feb996fee9d8.jpeg"
+    },
+    {
+      "id": "15",
+      "title": "ILL",
+      "number": "KBE 461B",
+      "capacity": 14,
+      "poster": "8cb571df-2ec7-4d90-b01d-5e8cac6ff899.jpeg"
+    },
+    {
+      "id": "16",
+      "title": "MAMBA 2",
+      "number": "KDJ 047M",
+      "capacity": 33,
+      "poster": "7d28fb62-8793-429a-903a-1d362ea05cd4.jpeg"
+    }
+  ]
+}
