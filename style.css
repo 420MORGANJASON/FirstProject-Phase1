@@ -145,10 +145,6 @@ html {
 }
 
 
-
-
-
-
 h1{
     font-size: 120px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -226,7 +222,7 @@ h1{
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: inline;
 }
 /* styling the h3  */
 h3{
