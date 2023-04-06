@@ -107,6 +107,35 @@ bookButtons.forEach(button => {
 
 document.getElementById("rate-button").onclick = submitRating;
 
+function changeTheme() {
+	var body = document.getElementsByTagName("body")[0];
+	
+	if (body.classList.contains("dark-mode")) {
+		// Change to light mode
+		body.classList.remove("dark-mode");
+	} else {
+		// Change to dark mode
+		body.classList.add("dark-mode");
+	}
+}
+function changeTheme() {
+	var body = document.getElementsByTagName("body")[0];
+	var textElements = document.getElementsByTagName("p");
+	
+	if (body.classList.contains("dark-mode")) {
+		// Change to light mode
+		body.classList.remove("dark-mode");
+		for (var i = 0; i < textElements.length; i++) {
+			textElements[i].style.color = "black";
+		}
+	} else {
+		// Change to dark mode
+		body.classList.add("dark-mode");
+		for (var i = 0; i < textElements.length; i++) {
+			textElements[i].style.color = "white";
+		}
+	}
+}
 
 
 // document

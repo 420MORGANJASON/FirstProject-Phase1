@@ -605,3 +605,8 @@ label{
 .submit-error[data-submit="error"] {
     display: block;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
