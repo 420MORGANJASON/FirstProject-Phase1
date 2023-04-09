@@ -160,7 +160,7 @@ function changeTheme() {
 // };
 
 
-fetch("http://localhost:3000/vehicles")
+fetch("db.json")
   .then(response => response.json())
   .then(data => {
     // 2. Extract details of the first vehicle
@@ -195,7 +195,7 @@ fetch("http://localhost:3000/vehicles")
     }
     // Function to show vehicle details when a vehicle is clicked
     function showVehicleDetails(id) {
-      fetch("http://localhost:3000/vehicles")
+      fetch("db.json")
         .then(response => response.json())
         .then(data => {
           const car = data.vehicle.find(car => car.id === id);

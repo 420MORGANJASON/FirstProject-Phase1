@@ -10,6 +10,9 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
+.about{
+font-family: Arial, Helvetica, sans-serif;
+}
 
 .card {
     width: 500px;
@@ -71,7 +74,7 @@ body{
 
 .book-btn {
     margin-top: 10px;
-    background-color: blue;
+    background-color: grey;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -111,7 +114,7 @@ body{
 
 .feedback-container button {
     margin-top: 10px;
-    background-color: blue;
+    background-color: grey;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -152,7 +155,7 @@ body{
     .form-container {
         max-width: 300px;
         padding: 10px;
-        background-color: yellow;
+        background-color: grey;
     }
 
     /* Full-width input fields */
@@ -347,7 +350,7 @@ h3{
     font-size: 50px;
         color: black;
         padding: 12px 0;
-        background: transparent;
+        background: white;
         border: 0;
         border-radius: 20px;
         outline: none;
@@ -397,6 +400,8 @@ h3{
     color: white;
     font-size: 80px;
     padding: 20px 42px;
+    border: 15px;
+    border-radius: 30px;
 }
 
 .container1{
@@ -520,7 +525,17 @@ h5{
 
 form {
     font-size: 70px;
-
+   padding: 6px;
+   border: 0px;
+   border-radius: 0px;
+ 
+}
+#form1 label{
+    font-size: 60px;
+    padding: 4px;
+    border: 20px;
+    border-radius: 20px;
+    background-color: grey;
 }
 
 input[type=text] {
@@ -552,7 +567,13 @@ input[type=password] {
 }
  label {
     font-size: 40px;
-    color: #ddd;
+    color: black;
+    padding: 10px;
+    margin: 0%;
+    border: 15%;
+    border-radius: 10px;
+    sbackground-color: grey;
+
  }
 .mySlides{
     width: 20%;
@@ -615,9 +636,6 @@ button {
     margin-top: 20px;
 }
 
-label{
-    color: black;
-}
 
 
 .submit-success {
