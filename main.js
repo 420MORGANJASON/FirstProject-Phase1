@@ -10,25 +10,25 @@ var slideIndex = 0;
 var slides = document.getElementsByClassName("mySlides");
 var textOverlays = document.getElementsByClassName("text-overlay");
 
-showSlides();
+// showSlides();
 
-function showSlides() {
-    // Hide all text overlays initially
-    for (var i = 0; i < textOverlays.length; i++) {
-        textOverlays[i].style.opacity = "0";
-    }
+// function showSlides() {
+//     // Hide all text overlays initially
+//     for (var i = 0; i < textOverlays.length; i++) {
+//         textOverlays[i].style.opacity = "0";
+//     }
 
-    // Show current slide and corresponding text overlay
-    slides[slideIndex].style.display = "block";
-    textOverlays[slideIndex].style.opacity = "1";
+//     // Show current slide and corresponding text overlay
+//     slides[slideIndex].style.display = "block";
+//     textOverlays[slideIndex].style.opacity = "1";
 
-    // Increment slide index and set timeout for next slide
-    slideIndex++;
-    if (slideIndex >= slides.length) {
-        slideIndex = 0;
-    }
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
+//     // Increment slide index and set timeout for next slide
+//     slideIndex++;
+//     if (slideIndex >= slides.length) {
+//         slideIndex = 0;
+//     }
+//     setTimeout(showSlides, 5000); // Change image every 5 seconds
+// }
 
 const feedbackForm = document.querySelector('.feedback-container form');
 const resetButton = document.querySelector('#reset');
@@ -160,7 +160,7 @@ function changeTheme() {
 // };
 
 
-fetch("db.json")
+fetch("http://localhost:3000/vehicles")
   .then(response => response.json())
   .then(data => {
     // 2. Extract details of the first vehicle
@@ -184,7 +184,7 @@ fetch("db.json")
     .catch(error => {
     console.log(error);
     });   
- // Function to update the mo details
+ // Function to update the vehicle details
     function updateVehicleDetails(car) {
       const { poster, title, capacity, tickets_sold } = movie;
       availableTickets = capacity - tickets_sold;
@@ -195,7 +195,7 @@ fetch("db.json")
     }
     // Function to show vehicle details when a vehicle is clicked
     function showVehicleDetails(id) {
-      fetch("db.json")
+      fetch("http://localhost:3000/vehicles")
         .then(response => response.json())
         .then(data => {
           const car = data.vehicle.find(car => car.id === id);
