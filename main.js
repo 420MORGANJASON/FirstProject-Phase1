@@ -29,7 +29,20 @@ var textOverlays = document.getElementsByClassName("text-overlay");
 //     }
 //     setTimeout(showSlides, 5000); // Change image every 5 seconds
 // }
+const form = document.getElementById("form1");
+    form.addEventListener("submit", handleSubmit);
 
+    function handleSubmit(event) {
+        event.preventDefault(); // prevent the form from submitting
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const age = document.getElementById("age").value;
+        const date = document.getElementById("date").value;
+        const number = document.getElementById("phone").value;
+        // you can do something with the form data here, like send it to a server using fetch()
+        alert("Thank you for your booking, " + name + "! We will contact you shortly at " + email + " or " + number + " to confirm your booking for " + date + ".");
+        form.reset(); // reset the form
+    }
 const feedbackForm = document.querySelector('.feedback-container form');
 const resetButton = document.querySelector('#reset');
 const responseMessage = document.querySelector('.feedback-container .response');
@@ -104,7 +117,14 @@ bookButtons.forEach(button => {
     alert("Please select a rating before submitting.");
   }
 }
-
+  const submitBtn = document.getElementById("submit-btn");
+  
+  submitBtn.addEventListener("click", (event) => {
+    event.preventDefault(); // prevent the form from submitting
+    
+    const selectedOption = document.getElementById("my-dropdown").value;
+    alert("You selected " + selectedOption);
+  });
 document.getElementById("rate-button").onclick = submitRating;
 
 function changeTheme() {
@@ -136,7 +156,16 @@ function changeTheme() {
 		}
 	}
 }
-
+//  const submitBtn = document.getElementById("BTN S");
+  
+  submitBtn.addEventListener("click", () => {
+    const name = document.getElementById("name-input").value;
+    const email = document.getElementById("email-input").value;
+    const number = document.getElementById("number-input").value;
+    const date = document.getElementById("date-input").value;
+    
+    alert("Thank you for your booking, " + name + "! We will contact you shortly at " + email + " or " + number + " to confirm your booking for " + date + ".");
+  });
 
 // document
 //   .querySelector("form")
