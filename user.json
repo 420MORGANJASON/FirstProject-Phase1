@@ -1,0 +1,14 @@
+{
+    "details": [
+         {
+        "id":1,
+        "name":"Daniel",
+        "email":"Karanja@gmail",
+        "age":"24",
+        "date":"Nairobi",
+        "number" : 56
+        
+    }
+    ]
+
+}

@@ -117,14 +117,14 @@ bookButtons.forEach(button => {
     alert("Please select a rating before submitting.");
   }
 }
-  const submitBtn = document.getElementById("submit-btn");
+  // const submitBtn = document.getElementById("submit-btn");
   
-  submitBtn.addEventListener("click", (event) => {
-    event.preventDefault(); // prevent the form from submitting
+  // submitBtn.addEventListener("click", (event) => {
+  //   event.preventDefault(); // prevent the form from submitting
     
-    const selectedOption = document.getElementById("my-dropdown").value;
-    alert("You selected " + selectedOption);
-  });
+  //   const selectedOption = document.getElementById("my-dropdown").value;
+  //   alert("You selected " + selectedOption);
+  // });
 document.getElementById("rate-button").onclick = submitRating;
 
 function changeTheme() {
@@ -156,16 +156,16 @@ function changeTheme() {
 		}
 	}
 }
-//  const submitBtn = document.getElementById("BTN S");
+//  const submitBtn = document.getElementById("submit-btn");
   
-  submitBtn.addEventListener("click", () => {
-    const name = document.getElementById("name-input").value;
-    const email = document.getElementById("email-input").value;
-    const number = document.getElementById("number-input").value;
-    const date = document.getElementById("date-input").value;
+//   submitBtn.addEventListener("click", () => {
+//     const name = document.getElementById("name").value;
+//     const email = document.getElementById("email").value;
+//     const number = document.getElementById("number").value;
+//     const date = document.getElementById("date").value;
     
-    alert("Thank you for your booking, " + name + "! We will contact you shortly at " + email + " or " + number + " to confirm your booking for " + date + ".");
-  });
+//     alert("Thank you for your booking, " + name + "! We will contact you shortly at " + email + " or " + number + " to confirm your booking for " + date + ".");
+//   });
 
 // document
 //   .querySelector("form")
@@ -189,7 +189,7 @@ function changeTheme() {
 // };
 
 
-fetch("http://localhost:3000/vehicles")
+fetch('http://localhost:3000/vehicles')
   .then(response => response.json())
   .then(data => {
     // 2. Extract details of the first vehicle
@@ -224,7 +224,7 @@ fetch("http://localhost:3000/vehicles")
     }
     // Function to show vehicle details when a vehicle is clicked
     function showVehicleDetails(id) {
-      fetch("http://localhost:3000/vehicles")
+      fetch('http://localhost:3000/vehicles')
         .then(response => response.json())
         .then(data => {
           const car = data.vehicle.find(car => car.id === id);
@@ -234,3 +234,48 @@ fetch("http://localhost:3000/vehicles")
         })
       .catch(error => console.error(error));
       }
+      
+
+      const  morganform =  document.getElementById("myform").addEventListener('submit', (e) =>{
+
+           e.preventDefault();
+
+           //prevet page from reloading while refreshing the page
+
+        const  name = document.getElementById("name").value;
+        const  email = document.getElementById("email").value;
+        const  age = document.getElementById("age").value;
+        const date = document.getElementById("date").value;
+        const number = document.getElementById("number").value;
+
+
+
+        ///connecting fetch to input our data
+
+
+        fetch('http://localhost:3000/vehicles', {
+
+        
+            method: "POST",
+            headers:{
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+
+
+
+             name :  name,
+             email : email,
+             age : age,
+             date : date,
+             number : number,
+
+            })
+        })
+
+
+.then(response => response.json())
+      .then(form => console.log(form))
+      .catch(err => console.error(err)); 
+
+      });
